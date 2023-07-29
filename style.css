@@ -32,7 +32,7 @@ body {
     flex: 1;
     text-align: center;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: rgb(201, 224, 211);
     border-radius: 5px;
   }
   
@@ -72,5 +72,11 @@ body {
 img{
     width:50%;
     border-radius: 25px;
+}
+
+#reset{
+    margin-top: 1rem;
+    background-color: green;
+    display: none;
 }
   
