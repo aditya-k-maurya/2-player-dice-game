@@ -3,7 +3,7 @@ const player2ScoreElement = document.getElementById('player2-score');
 const rollDiceButton = document.getElementById('roll-dice');
 const winnerElement = document.getElementById('winner');
 const winnerNameElement = document.getElementById('winner-name');
-const resetButton = document.querySelector("#reset ")
+const resetButton = document.getElementById("reset")
 const image1 = document.getElementById('img1')
 const image2 = document.getElementById('img2')
 
@@ -35,7 +35,7 @@ function rollDice() {
 function showWinner(winnerName) {
   winnerNameElement.textContent = winnerName;
   winnerElement.style.display = 'block';
-  rollDiceButton.disabled = true;
+  rollDiceButton.style.display = 'none';
   resetButton.style.display = 'block';
 }
 function resetGame() {
@@ -46,10 +46,9 @@ function resetGame() {
     player1ScoreElement.textContent = '0';
     player2ScoreElement.textContent = '0';
     winnerElement.style.display = 'none';
-    rollDiceButton.disabled = false;
+    rollDiceButton.style.display = "block";
     image1.setAttribute('src','assets/inverted-dice-6.png');
     image2.setAttribute('src','assets/inverted-dice-6.png');
-    rollDiceButton.style.display = 'block';
     resetButton.style.display = 'none';
 
 }
